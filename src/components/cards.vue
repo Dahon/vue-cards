@@ -29,7 +29,6 @@
 </template>
 <script>
 import card from './card.vue'
-import { required } from 'vuelidate/lib/validators'
 
 export default {
   name: "cards",
@@ -50,12 +49,6 @@ export default {
             type: 'list1'
         },
     };
-  },
-  validations: {
-    form: {
-      name: {required},
-      description: {required},
-    }
   },
   computed: {
       lists: {
